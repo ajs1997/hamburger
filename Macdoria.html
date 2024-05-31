@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도리아</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <div id="header">
+                <h1><a href="Macdoria.html"><img src="images/logo.png" alt="맥도리아">맥도리아</a></h1>
+                <nav>
+                    <div class="nav_bg"></div>
+
+                    <ul class="gnb">
+                        <li><a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">햄버거</a></li>
+                                <li><a href="#">사이드</a></li>
+                                <li><a href="#">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">매장문의</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">배달서비스</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이야깃거리</a>
+                            <ul class="sub">
+                                <li><a href="#">새 소식</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">창업안내</a>
+                            <ul class="sub">
+                                <li><a href="#">가맹FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">가게이야기</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드스토리</a></li>
+                                <li><a href="#">연혁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="top_menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">가맹문의</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="banner">
+            <p class="img_text"></p>
+            <img src="images/banner.jpg" alt="">
+        </section>
+
+        <section id="contents_wrap_1" class="clearfix">
+            <table>
+                    <tr>
+                        <td class="highlight left-align">새 소식</td>
+                        <td class="highlight right-align"></td>
+                    </tr>
+                    <tr>
+                        <td>새 소식 1</td>
+                        <td class="right-align">2023-11</td>
+                    </tr>
+                    <tr>
+                        <td>새 소식 2</td>
+                        <td class="right-align">2023-11</td>
+                    </tr>
+                    <tr>
+                        <td>새 소식 3</td>
+                        <td class="right-align">2023-11</td>
+                    </tr>
+                    <tr>
+                        <td>새 소식 4</td>
+                        <td class="right-align">2023-11</td>
+                    </tr>
+            </table>
+
+            <div id="contents">
+                <div class="icon animated bounceInUp delay-02s wow">
+                    <a href="#"><img src="images/c1.jpg" alt="햄버거"></a>
+                    <p class="icon_text">햄버거</p>
+                </div>
+                <div class="icon animated bounceInUp delay-04s wow">
+                    <a href="#"><img src="images/c2.jpg" alt="매장찾기"></a>
+                    <p class="icon_text">매장찾기</p>
+                </div>
+                <div class="icon animated bounceInUp delay-06s wow">
+                    <a href="#"><img src="images/c3.jpg" alt="배달서비스"></a>
+                    <p class="icon_text">배달서비스</p>
+                </div>
+                <div class="icon animated bounceInUp delay-08s wow">
+                    <a href="#"><img src="images/c4.jpg" alt="새 소식"></a>
+                    <p class="icon_text">새 소식</p>
+                </div>
+            </div>
+
+            <div id="border_h"><p class="p_h">햄버거</p></div>
+
+            <div class="m_ham">
+                <div id="m_ham_img"><a href="#"><img src="images/ham1.jpg" alt=""></a><p class="ham_text">치킨버거</p></div>
+                <div id="m_ham_img"><a href="#"><img src="images/ham1.jpg" alt=""></a><p class="ham_text">치즈버거</p></div>
+                <div id="m_ham_img"><a href="#"><img src="images/ham1.jpg" alt=""></a><p class="ham_text">새우버거</p></div>
+                <div id="m_ham_img"><a href="#"><img src="images/ham1.jpg" alt=""></a><p class="ham_text">불고기버거</p></div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <footer class="animated fadeInDown delay-02s wow">
+            <div id="footer">
+                <div class="f_logo"><img src="images/logo.png" alt="맥도리아">맥도리아</div>
+                <div class="copy">
+                    서울특별시 중구 을지로50 20층 TEL. 02-558-0396 
+                    대표 : 홍길동 사업자 번호 : 000-00000<br>
+                    Copyright © 00000000. All Rights Reserved.<br>
+                </div>
+                <div class="sns">
+                    <div class="sns1"><a href="#"><img src="images/sns1.png" alt=""></a></div>
+                    <div class="sns2"><a href="#"><img src="images/sns2.png" alt=""></a></div>
+                    <div class="sns3"><a href="#"><img src="images/sns3.png" alt=""></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+
+
+
+<!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
