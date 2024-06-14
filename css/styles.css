@@ -128,6 +128,11 @@ table {
     margin-top: 100px;
 }
 
+.id {width: 400px; height: 50px;}
+.pw {width: 400px; height: 50px;}
+
+/* 햄버거사진 */
+
 #border_h {
     border: none;
     margin-top: 250px;
@@ -184,18 +189,21 @@ footer {
 
 .copy {float: left; font-size: 18px; color: #555; padding-top: 7px;}
 
-.sns {float: right; display: flex;}
-.sns a i { color: #a2a1a1; padding: 10px 10px 0 10px;}
-.sns a i:hover {color: #000;}
 
 .sns1 a img {
-    width: 10%;
+    width: 5%;
+    float: right;
+    padding-right: 15px;
 }
 
 .sns2 a img {
-    width: 10%;
+    width: 5%;
+    float: right;
+    padding-right: 15px;
 }
 
 .sns3 a img {
-    width: 10%;
+    width: 5%;
+    float: right;
+    padding-right: 15px;
 }

@@ -57,8 +57,75 @@
             </div>
         </header>
 
-        <section id="contents_wrap_1" class="clearfix">
-            <p class="login">로그인</p>
+            <section id="contents_wrap_1" class="clearfix">
+                <p class="login">로그인</p>
+
+                <form action="">
+                    <input class="id" type="text" placeholder="아이디를 입력하세요."><br><br>
+                    <input class="pw" type="password" placeholder="비밀번호를 입력하세요.">
+                </form>
+        
+            </section>
+
+            
 
 
-        </section>
+        <!-- <footer class="animated fadeInDown delay-02s wow">
+            <div id="footer">
+                <div class="f_logo"><img src="images/logo.png" alt="맥도리아">맥도리아</div>
+                <div class="copy">
+                    서울특별시 중구 을지로50 20층 TEL. 02-558-0396 
+                    대표 : 홍길동 사업자 번호 : 000-00000<br>
+                    Copyright © 00000000. All Rights Reserved.<br>
+                </div>
+                <div class="sns">
+                    <div class="sns1"><a href="#"><img src="images/sns3.png" alt=""></a></div>
+                    <div class="sns2"><a href="#"><img src="images/sns2.png" alt=""></a></div>
+                    <div class="sns3"><a href="#"><img src="images/sns1.png" alt=""></a></div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+
+
+
+<!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
