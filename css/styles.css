@@ -31,12 +31,12 @@
 
 
 #wrap {width: 100%;}
-header {width: 100%;}
+header {width: 100%; background-color: rgb(235, 241, 222)}
 #banner {width: 100%;}
 #banner img {max-width: 100%; height: auto;}
 #contents_wrap_1 {width: 100%; margin-top: 100px;}
 #contents_wrap_2 {width: 100%; margin-top: 150px;}
-footer {width: 100%; margin-top: 150px;}
+footer {width: 100%; margin-top: 150px; background-color: rgb(235, 241, 222)}
 
 
 
@@ -46,11 +46,14 @@ footer {width: 100%; margin-top: 150px;}
     float: left;
     width: 30%; 
     padding: 70px 0 0 0;
+    overflow: hidden;
 }
 #header h1 a {
-    font-size: 30px;
+    font-size: 36px;
 }
-#header h1 img {max-width: 100%; height: auto;}
+
+
+#header h1 img {max-width: 100%; height: auto; width: 60px; margin-right: 10px;}
 
 
 nav {float: left; width: 70%;}
@@ -167,9 +170,8 @@ table {
 /* 푸터 */
 footer {
     width: 100%;
-    border-top: solid 1px black;
 }
-#footer {width: 1200px; height: 100px; margin: 0 auto; padding-top: 20px;}
+#footer {width: 1200px; height: 150px; margin: 0 auto; padding-top: 40px;}
 
 .f_logo {float: left; padding:  0 30px 0 0;
     display: flex;
@@ -177,21 +179,23 @@ footer {
     align-items: center;
     font-size: 30px;
 }
+
+.f_logo img {max-width: 100%; height: auto; width: 60px; margin-right: 10px;}
+
 .copy {float: left; font-size: 18px; color: #555; padding-top: 7px;}
 
 .sns {float: right; display: flex;}
-.sns a i {font-size: 2.5rem; color: #a2a1a1; padding: 10px 10px 0 10px;}
+.sns a i { color: #a2a1a1; padding: 10px 10px 0 10px;}
 .sns a i:hover {color: #000;}
 
 .sns1 a img {
-    padding-right: 15px;
+    width: 10%;
 }
 
 .sns2 a img {
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 10%;
 }
 
 .sns3 a img {
-    padding-left: 5px;
+    width: 10%;
 }
