@@ -166,7 +166,7 @@ nav ul.sub li a:hover {background: #ff9d1e;}
     cursor: pointer;
     padding: 5px 30px;
     margin-top: 50px;
-    margin-left: 370px;
+    margin-left: 490px;
 }
 
 .btn2 {
@@ -183,12 +183,12 @@ nav ul.sub li a:hover {background: #ff9d1e;}
 .btn3 {
     background-color: #afd6c0;
     border-color: rgb(0, 104, 0);
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 10px;
     cursor: pointer;
     padding: 5px 30px;
     margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 430px;
 }
 
 .circleBox {
@@ -414,7 +414,7 @@ td select:last-child {
 .thx {
     margin-top: 50px;
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 70px;
 }
 
