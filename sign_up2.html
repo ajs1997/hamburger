@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도리아</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <header class="clearfix">
+            <div id="header">
+                <h1><a href="index.html"><img src="images/logo.png" alt="맥도리아">맥도리아</a></h1>
+                <nav>
+                    <div class="nav_bg"></div>
+
+                    <ul class="gnb">
+                        <li><a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="menu.html">햄버거</a></li>
+                                <li><a href="menu2.html">사이드</a></li>
+                                <li><a href="menu3.html">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">매장문의</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">배달서비스</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">이야깃거리</a>
+                            <ul class="sub">
+                                <li><a href="news.html">새 소식</a></li>
+                                <li><a href="promotion.html">프로모션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">창업안내</a>
+                            <ul class="sub">
+                                <li><a href="faq.html">가맹FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">가게이야기</a>
+                            <ul class="sub">
+                                <li><a href="brand.html">브랜드스토리</a></li>
+                                <li><a href="timeline.html">연혁</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="top_menu">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="sign_up.html">회원가입</a></li>
+                    <li><a href="#">가맹문의</a></li>
+                </ul>
+            </div>
+        </header>
+
+            <section id="contents_wrap_1" class="clearfix">
+                <p class="login">회원가입</p>
+                <div class="circleBox">
+                    <div class="circle">
+                        <p>약관동의</p>
+                    </div>
+                    <div class="circle on">
+                        <p>정보입력</p>
+                    </div>
+                    <div class="circle">
+                        <p>가입완료</p>
+                    </div>
+                </div>
+
+                <div class="container1">
+                    <div class="ac"><h2>계정정보 입력</h2></div>
+                    <table class="tb2">
+                        <tr>
+                            <th>아이디</th>
+                            <td>
+                                <div class="flex-container">
+                                    <input type="text" name="userid">
+                                    <div class="button">
+                                        <input type="button" value="중복확인">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td><input type="password" name="password" placeholder="8~16자리 / 영문, 숫자조합"></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 확인</th>
+                            <td><input type="password" name="confirm_password"></td>
+                        </tr>
+                        <tr>
+                            <th>생년월일</th>
+                            <td>
+                                <select name="birth_year">
+                                    <option value="">년도 선택</option>
+                                    <!-- 년도 옵션 추가 -->
+                                    <script>
+                                        let year = new Date().getFullYear();
+                                        for (let i = year; i >= 1900; i--) {
+                                            document.write('<option value="' + i + '">' + i + '</option>');
+                                        }
+                                    </script>
+                                </select>
+                                <select name="birth_month">
+                                    <option value="">월 선택</option>
+                                    <!-- 월 옵션 추가 -->
+                                    <script>
+                                        for (let i = 1; i <= 12; i++) {
+                                            document.write('<option value="' + i + '">' + i + '</option>');
+                                        }
+                                    </script>
+                                </select>
+                                <select name="birth_day">
+                                    <option value="">일 선택</option>
+                                    <!-- 일 옵션 추가 -->
+                                    <script>
+                                        for (let i = 1; i <= 31; i++) {
+                                            document.write('<option value="' + i + '">' + i + '</option>');
+                                        }
+                                    </script>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                        <table class="tb2">
+                            <tr>
+                                <th>성별</th>
+                                <td>
+                                    <input type="radio" name="gender" value="male"> 남자
+                                    <input type="radio" name="gender" value="female"> 여자
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일 주소</th>
+                                <td>
+                                    <div class="flex-container">
+                                        <input type="email" name="email" placeholder="">
+                                        <span>@</span>
+                                        <input type="text" name="email_domain">
+                                        <select name="email_select">
+                                            <option value="직접입력">직접입력</option>
+                                            <!-- 이메일 도메인 옵션 추가 -->
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>닉네임</th>
+                                <td><input type="text" name="nickname" placeholder="한글 10자리"></td>
+                            </tr>
+                        </table>
+                
+                        <div class="ac"><h2>휴대폰 인증</h2></div>
+                        <table class="tb2">
+                            <tr>
+                                <th>연락처</th>
+                                <td>
+                                    <div class="flex-container">
+                                        <select name="phone_prefix">
+                                            <option value="010">010</option>
+                                            <!-- 추가 번호 옵션 -->
+                                        </select>
+                                        <input type="text" name="phone_middle">
+                                        <input type="text" name="phone_last">
+                                        <input type="button" value="인증하기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>인증번호</th>
+                                <td>
+                                    <div class="flex-container">
+                                        <input type="text" name="auth_number">
+                                        <span style="color: red;">03:00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <a href="sign_up3.html"><button class="btn2">다음</button></a>
+                </section>
+                </div>
+                
+
+        <footer class="animated fadeInDown delay-02s wow">
+            <div id="footer">
+                <div class="f_logo"><img src="images/logo.png" alt="맥도리아">맥도리아</div>
+                <div class="copy">
+                    서울특별시 중구 을지로50 20층 TEL. 02-558-0396 
+                    대표 : 홍길동 사업자 번호 : 000-00000<br>
+                    Copyright © 00000000. All Rights Reserved.<br>
+                </div>
+                <div class="sns">
+                    <div class="sns1"><a href="#"><img src="images/sns3.png" alt=""></a></div>
+                    <div class="sns2"><a href="#"><img src="images/sns2.png" alt=""></a></div>
+                    <div class="sns3"><a href="#"><img src="images/sns1.png" alt=""></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('header').addClass('fixed-header');
+            } else {
+                $('header').removeClass('fixed-header');
+            }
+        });
+    </script>
+
+
+
+
+<!-- 메뉴탭 -->
+<script>
+    function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
